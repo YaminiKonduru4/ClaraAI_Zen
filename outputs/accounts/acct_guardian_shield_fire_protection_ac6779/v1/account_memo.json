@@ -1,0 +1,48 @@
+{
+  "account_id": "acct_guardian_shield_fire_protection_ac6779",
+  "company_name": "Guardian Shield Fire Protection",
+  "call_type": "demo",
+  "transcript_source": "guardian_shield_demo.txt",
+  "extracted_at": "2026-03-04T11:37:01.842368Z",
+  "business_hours": {
+    "days": "Monday - Friday",
+    "start": "8 AM",
+    "end": "5 PM",
+    "timezone": "Eastern"
+  },
+  "office_address": null,
+  "services_supported": [
+    "fire protection",
+    "fire suppression",
+    "inspection"
+  ],
+  "emergency_definition": [
+    "service. About 50 employees",
+    "mostly field technicians"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "404-555-0155",
+    "order": [
+      "404-555-0155"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "primary_contact": "404-555-0155",
+    "fallback": "Collect name, number, and issue for next business day callback"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": null,
+    "retries": null,
+    "transfer_fail_message": null
+  },
+  "integration_constraints": [
+    "ServiceTrade integration required \u2014 do not create or modify records"
+  ],
+  "after_hours_flow_summary": "Greet caller; identify if emergency. Emergencies (service. About 50 employees, mostly field technicians...): collect name, number, address \u2192 transfer to 404-555-0155; if transfer fails after 60s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+  "office_hours_flow_summary": "Office open Monday - Friday 8 AM\u20135 PM Eastern. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 404-555-0155. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+  "questions_or_unknowns": [
+    "Call transfer timeout not specified \u2014 defaulting to 60s"
+  ],
+  "notes": "Extracted via enhanced rule-based parser."
+}

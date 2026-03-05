@@ -1,0 +1,57 @@
+[Onboarding Call Transcript – Account 5]
+Company: Guardian Shield Fire Protection
+Date: 2024-11-29
+Participants: Onboarding Specialist (Clara Team), Client: Angela Russo + Service Manager: Derek Yuen
+
+---
+
+Specialist: Angela, Derek — thanks for joining. Let's lock in Guardian Shield's full configuration.
+
+Derek: Happy to. I oversee all service operations so I know the routing well.
+
+Specialist: Business hours — Monday–Friday, 8 AM to 5 PM Eastern. Confirmed?
+
+Angela: Confirmed.
+
+Specialist: Emergency types — active sprinkler flow, fire/suppression alarm activation, kitchen suppression trigger, active fire event at a monitored property?
+
+Derek: Yes. I want to add one more: any call where a customer describes seeing visible water damage from a sprinkler that's suspected to be a malfunction. That's a potential liability and should be treated as urgent.
+
+Specialist: Added — suspected sprinkler malfunction with visible water damage.
+
+Specialist: Emergency routing?
+
+Derek: Primary: me — Derek Yuen, 404-555-0198. If I don't answer in 45 seconds, go to our field supervisor, Brian Cole, at 404-555-0247. If neither answers in two cycles, transfer to our emergency answering fallback line: 404-555-0999. That line is staffed by a third-party we trust for true emergencies only.
+
+Specialist: Timeout 45 seconds, Derek → Brian → 404-555-0999 fallback. Two cycles?
+
+Derek: Two cycles for Derek and Brian. The fallback is the last resort — no cycles on that one.
+
+Specialist: Understood. Non-emergency business hours?
+
+Angela: Main office: 404-555-0155.
+
+Specialist: After-hours non-emergency?
+
+Angela: Collect name, number, email if they have one, and description of the request. Tell them someone from our office will follow up within one business day.
+
+Specialist: Office address for greeter?
+
+Angela: 2250 Cumberland Parkway SE, Atlanta, Georgia 30339.
+
+Specialist: ServiceTrade constraints?
+
+Derek: Very important — Clara should never reference ServiceTrade, create anything, or provide job status information. All record access is internal only.
+
+Specialist: Confirmed. Any other special rules?
+
+Angela: If a caller identifies themselves as a property manager for a large commercial account — like a hospital or an airport — route directly to me, Angela, at 404-555-0120. Those are priority clients.
+
+Specialist: Noted — VIP routing for hospital/airport/large commercial accounts to Angela at 404-555-0120.
+
+Derek: One open item: we'd like Clara to handle Spanish-language callers eventually. Not required at launch.
+
+Specialist: Noted as a future requirement — flagged under open items.
+
+---
+[End of Onboarding Call]

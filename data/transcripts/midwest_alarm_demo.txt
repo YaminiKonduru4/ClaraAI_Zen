@@ -1,0 +1,49 @@
+[Demo Call Transcript – Account 2]
+Company: Midwest Alarm Systems Inc
+Date: 2024-11-12
+Participants: Sales Rep (Clara), Client: Sandra Patel (Owner)
+
+---
+
+Sales Rep: Great to meet you Sandra. Tell me about Midwest Alarm Systems.
+
+Sandra: We're a fire alarm and security integration company, been around 22 years. Champaign, Illinois. We do installation, inspection, and 24/7 monitoring for commercial and some residential clients.
+
+Sales Rep: How many calls would you say come in on a typical day?
+
+Sandra: Probably 30 to 40 during business hours. After hours we get maybe 5 to 10 — mostly homeowners thinking their smoke detector going off is an emergency.
+
+Sales Rep: And how do you handle after-hours calls today?
+
+Sandra: We have an answering service. But they're terrible. Half the time they can't tell if it's a real alarm or a nuisance alarm. We lose customers over it.
+
+Sales Rep: What should be treated as a genuine emergency?
+
+Sandra: Confirmed fire alarm activation, carbon monoxide alarm, any alarm indicating actual smoke or detection — not just a dead battery alert.
+
+Sales Rep: Got it. What are your business hours?
+
+Sandra: We're open Monday to Friday, 8 AM to 6 PM Central time.
+
+Sales Rep: Do you use any dispatch or CRM software?
+
+Sandra: We use ServiceTitan for everything. All our jobs, customer records, the works.
+
+Sales Rep: Got it. Clara won't create records in ServiceTitan — she just routes calls. Does that work?
+
+Sandra: That's fine. We just need the caller information passed along. Our dispatcher handles job creation.
+
+Sales Rep: Perfect. Let me demo how she handles a homeowner who thinks their alarm went off...
+
+[Demo played]
+
+Sandra: I love that she confirmed whether it was a confirmed activation or just an alert sound. That's exactly the distinction we need.
+
+Sales Rep: Exactly. She qualifies first, then escalates. And if your on-call doesn't answer, she assures the caller and logs everything.
+
+Sandra: Who would be on-call? I'd have to figure that out.
+
+Sales Rep: That's something we finalize on the onboarding call. No worries.
+
+---
+[End of Demo Call]

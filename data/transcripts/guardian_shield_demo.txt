@@ -1,0 +1,51 @@
+[Demo Call Transcript – Account 5]
+Company: Guardian Shield Fire Protection
+Date: 2024-11-18
+Participants: Sales Rep (Clara), Client: Angela Russo (Office Director)
+
+---
+
+Sales Rep: Hi Angela. Thank you for taking the time. Tell me about Guardian Shield.
+
+Angela: Guardian Shield is a fire protection company out of Atlanta, Georgia. We do sprinkler design, installation, inspections, and emergency service. About 50 employees, mostly field technicians. We serve the greater Atlanta metro.
+
+Sales Rep: What's driving the interest in AI call handling?
+
+Angela: Our after-hours answering service is costing us clients. We pay a lot for it and it's not reliable. Technicians get called out on non-emergencies, and real emergencies sometimes don't get escalated properly.
+
+Sales Rep: What should Clara treat as a true emergency?
+
+Angela: Active water flow from a sprinkler head. Any fire alarm tied to a suppression system. A kitchen suppression system that's gone off. If someone's building is actively having a fire-related event.
+
+Sales Rep: And non-emergency?
+
+Angela: Scheduling inspections, general inquiries, billing questions, speaking to sales. None of those need an after-hours escalation.
+
+Sales Rep: Business hours?
+
+Angela: Monday through Friday, 8 AM to 5 PM Eastern. We're in Atlanta.
+
+Sales Rep: Software systems?
+
+Angela: We use ServiceTrade for all field operations. Clara absolutely should not create anything in there — that's our service manager's job.
+
+Sales Rep: Clara doesn't touch ServiceTrade — she routes and collects only.
+
+Angela: Good. And our main office number is 404-555-0155. During business hours, non-emergency calls should go there.
+
+Sales Rep: Got it. Let me demo the system for you...
+
+[Demo played — Angela watches both emergency and non-emergency flows]
+
+Angela: I like that she's calm during the emergency. Our current service sometimes has people who seem frantic, which makes clients more anxious.
+
+Sales Rep: Right — Clara is trained to be measured and reassuring. And she never puts anyone on hold without explanation.
+
+Angela: That's important. One thing — do we control the voice and greeting?
+
+Sales Rep: Yes. We configure all of that in your onboarding session.
+
+Angela: Perfect. We're ready to move forward.
+
+---
+[End of Demo Call]

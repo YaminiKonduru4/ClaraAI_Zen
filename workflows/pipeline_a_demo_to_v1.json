@@ -1,0 +1,172 @@
+{
+    "name": "Clara Pipeline A – Demo Call → Agent v1",
+    "nodes": [
+        {
+            "parameters": {
+                "triggerOn": "folder",
+                "path": "={{ $env.DATA_DIR }}/demo",
+                "events": [
+                    "create",
+                    "change"
+                ]
+            },
+            "id": "trigger-001",
+            "name": "📂 Watch Demo Transcripts Folder",
+            "type": "n8n-nodes-base.localFileTrigger",
+            "position": [
+                200,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "python {{ $env.SCRIPTS_DIR }}/extract_memo.py \"{{ $json.path }}\" --call-type demo",
+                "cwd": "{{ $env.PROJECT_ROOT }}"
+            },
+            "id": "extract-001",
+            "name": "🧠 Extract Account Memo (LLM)",
+            "type": "n8n-nodes-base.executeCommand",
+            "position": [
+                440,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const raw = $input.first().json.stdout;\nconst memo = JSON.parse(raw);\nreturn [{ json: memo }];"
+            },
+            "id": "parse-001",
+            "name": "🔧 Parse Memo JSON",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                680,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "python {{ $env.SCRIPTS_DIR }}/generate_agent_spec.py \"{{ $env.OUTPUTS_DIR }}/{{ $json.account_id }}/v1/account_memo.json\" --version v1",
+                "cwd": "{{ $env.PROJECT_ROOT }}"
+            },
+            "id": "gen-spec-001",
+            "name": "⚙️ Generate Agent Spec v1",
+            "type": "n8n-nodes-base.executeCommand",
+            "position": [
+                920,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const memo = $('🔧 Parse Memo JSON').first().json;\nconst taskItem = {\n  name: `[Clara] Onboarding: ${memo.company_name || memo.account_id}`,\n  notes: `Account ID: ${memo.account_id}\\nDemo file: ${memo.transcript_source}\\nStatus: Awaiting onboarding call`,\n  account_id: memo.account_id,\n  created_at: new Date().toISOString()\n};\nreturn [{ json: taskItem }];"
+            },
+            "id": "task-001",
+            "name": "📋 Build Task Tracker Item",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                920,
+                500
+            ]
+        },
+        {
+            "parameters": {
+                "filePath": "={{ $env.OUTPUTS_DIR }}/{{ $('🔧 Parse Memo JSON').first().json.account_id }}/task_item.json",
+                "content": "={{ JSON.stringify($json, null, 2) }}"
+            },
+            "id": "save-task-001",
+            "name": "💾 Save Task Item (Local)",
+            "type": "n8n-nodes-base.writeFile",
+            "position": [
+                1160,
+                500
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const memo = $('🔧 Parse Memo JSON').first().json;\nconsole.log(`✅ Pipeline A complete for: ${memo.account_id}`);\nreturn [{ json: { status: 'success', account_id: memo.account_id, timestamp: new Date().toISOString() } }];"
+            },
+            "id": "log-001",
+            "name": "✅ Log Success",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                1400,
+                300
+            ]
+        }
+    ],
+    "connections": {
+        "📂 Watch Demo Transcripts Folder": {
+            "main": [
+                [
+                    {
+                        "node": "🧠 Extract Account Memo (LLM)",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🧠 Extract Account Memo (LLM)": {
+            "main": [
+                [
+                    {
+                        "node": "🔧 Parse Memo JSON",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🔧 Parse Memo JSON": {
+            "main": [
+                [
+                    {
+                        "node": "⚙️ Generate Agent Spec v1",
+                        "type": "main",
+                        "index": 0
+                    }
+                ],
+                [
+                    {
+                        "node": "📋 Build Task Tracker Item",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "⚙️ Generate Agent Spec v1": {
+            "main": [
+                [
+                    {
+                        "node": "✅ Log Success",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "📋 Build Task Tracker Item": {
+            "main": [
+                [
+                    {
+                        "node": "💾 Save Task Item (Local)",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "_meta": {
+        "description": "Pipeline A – Demo transcript → Account Memo v1 → Agent Spec v1 → Task Tracker item",
+        "zero_cost": true,
+        "requires_env": [
+            "GEMINI_API_KEY",
+            "DATA_DIR",
+            "SCRIPTS_DIR",
+            "OUTPUTS_DIR",
+            "PROJECT_ROOT"
+        ]
+    }
+}

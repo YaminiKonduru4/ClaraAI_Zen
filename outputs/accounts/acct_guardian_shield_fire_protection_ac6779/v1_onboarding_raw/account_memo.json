@@ -1,0 +1,48 @@
+{
+  "account_id": "acct_guardian_shield_fire_protection_ac6779",
+  "company_name": "Guardian Shield Fire Protection",
+  "call_type": "onboarding",
+  "transcript_source": "guardian_shield_onboarding.txt",
+  "extracted_at": "2026-03-04T11:39:40.734375Z",
+  "business_hours": {
+    "days": "Monday - Friday",
+    "start": "8 AM",
+    "end": "5 PM",
+    "timezone": "Eastern"
+  },
+  "office_address": null,
+  "services_supported": [
+    "fire protection",
+    "fire suppression"
+  ],
+  "emergency_definition": [
+    "types \u2014 active sprinkler flow",
+    "fire/suppression alarm activation",
+    "kitchen suppression trigger",
+    "active fire event at a monitored property?"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "404-555-0198",
+    "order": [
+      "404-555-0198",
+      "404-555-0247"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "primary_contact": "404-555-0155",
+    "fallback": "Collect name, number, and issue for next business day callback"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": 45,
+    "retries": null,
+    "transfer_fail_message": null
+  },
+  "integration_constraints": [
+    "Do not create or modify records in ServiceTrade"
+  ],
+  "after_hours_flow_summary": "Greet caller; identify if emergency. Emergencies (types \u2014 active sprinkler flow, fire/suppression alarm activation...): collect name, number, address \u2192 transfer to 404-555-0198; if transfer fails after 45s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+  "office_hours_flow_summary": "Office open Monday - Friday 8 AM\u20135 PM Eastern. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 404-555-0198. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+  "questions_or_unknowns": [],
+  "notes": "Extracted via enhanced rule-based parser."
+}

@@ -1,0 +1,10 @@
+{
+  "account": "Midwest Alarm Systems Inc",
+  "account_id": "acct_midwest_alarm_systems_inc_3e8dc8",
+  "status": "Onboarding Processed",
+  "agent_version": "v2",
+  "pipeline_a_status": "success",
+  "pipeline_b_status": "success",
+  "next_step": "Review v2 agent spec and schedule Retell import",
+  "created_at": "2026-03-04T11:22:25.716764Z"
+}

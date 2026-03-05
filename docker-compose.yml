@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: clara_n8n
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=clara
+      - N8N_BASIC_AUTH_PASSWORD=clara123
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=Asia/Kolkata
+      # Pass-through env vars for workflow scripts
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - PROJECT_ROOT=/data/project
+      - SCRIPTS_DIR=/data/project/scripts
+      - DATA_DIR=/data/project/data/transcripts
+      - OUTPUTS_DIR=/data/project/outputs/accounts
+    volumes:
+      - n8n_data:/home/node/.n8n
+      # Mount entire project so n8n can run the Python scripts
+      - .:/data/project
+    # n8n needs Python + dependencies; use exec override or see README
+    # For a quick test without Docker, use: python scripts/batch_run.py
+
+volumes:
+  n8n_data:

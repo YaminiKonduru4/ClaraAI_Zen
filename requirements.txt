@@ -1,0 +1,6 @@
+# Clara AI Pipeline – Python Dependencies
+# Install with: pip install -r requirements.txt
+
+google-genai>=0.8.0             # Gemini API (replaces deprecated google-generativeai)
+pyyaml>=6.0.1                   # YAML output for agent specs
+python-dotenv>=1.0.0            # Load .env file automatically

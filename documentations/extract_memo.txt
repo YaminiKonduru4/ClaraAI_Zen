@@ -1,0 +1,6 @@
+"""
+extract_memo.py – Extract structured Account Memo JSON from a call transcript.
+
+Uses Google Gemini 1.5 Flash (free tier: 15 RPM, 1M tokens/day).
+Fallback: rule-based extraction if API key is absent.
+"""

@@ -1,0 +1,53 @@
+[Onboarding Call Transcript – Account 2]
+Company: Midwest Alarm Systems Inc
+Date: 2024-11-22
+Participants: Onboarding Specialist (Clara Team), Client: Sandra Patel + Dispatcher: Carlos Mendez
+
+---
+
+Specialist: Sandra, Carlos, thanks for the time. Let's finalize the Clara configuration for Midwest Alarm Systems.
+
+Sandra: Let's do it. Carlos handles all dispatching so he knows the routing inside out.
+
+Specialist: Perfect. Business hours first — Sandra mentioned 8 AM to 6 PM, Monday through Friday, Central?
+
+Carlos: That's right. We do close early on Fridays sometimes, like 4 PM, but let's just lock in 6 PM to keep it simple.
+
+Specialist: Got it — Monday–Friday, 8 AM to 6 PM Central. Now emergency definition — confirmed fire alarm, CO alarm, actual smoke or detection?
+
+Sandra: Yes. And add one more: any call where the customer says their sprinkler head is physically discharging. That's an emergency even if no alarm is going off.
+
+Specialist: Got it, adding "sprinkler head discharge (active)" to the emergency list.
+
+Carlos: Also want to clarify — if a homeowner says their smoke detector is chirping, that is NOT an emergency. That's a battery issue. Clara should offer to log it for a next-business-day callback.
+
+Specialist: Perfect. Clara will qualify the type of alarm before escalating.
+
+Specialist: Now for emergency routing. Who's primary on-call?
+
+Carlos: That'd be me — Carlos Mendez, 217-555-0177. If I don't answer within 30 seconds, try Sandra: 217-555-0234. If neither of us answers after two full cycles, Clara should tell the caller that dispatch has been paged and to call 911 if there is immediate danger to life or property.
+
+Specialist: Great — 30-second timeout, Carlos first, Sandra second, 2 cycles, 911 advisory on complete failure.
+
+Specialist: For non-emergency calls during business hours?
+
+Carlos: Route to our main office line: 217-555-0100.
+
+Specialist: After-hours non-emergency?
+
+Carlos: Collect name, number, and what service they need, and we'll call back during business hours. Standard.
+
+Specialist: Any ServiceTitan constraints?
+
+Sandra: Clara should never create customer profiles or work orders in ServiceTitan. Our office staff handles that. Clara just captures info.
+
+Specialist: Confirmed. Last thing — holiday schedule?
+
+Sandra: We follow US federal holidays. Closed on all major ones. If someone calls on a holiday, treat it like after-hours.
+
+Specialist: Noted. We'll flag holiday schedule as an open item for now — you can send us the specific dates.
+
+Sandra: Will do. Thanks, this is very thorough.
+
+---
+[End of Onboarding Call]

@@ -1,0 +1,176 @@
+{
+    "name": "Clara Pipeline B – Onboarding → Agent v2",
+    "nodes": [
+        {
+            "parameters": {
+                "triggerOn": "folder",
+                "path": "={{ $env.DATA_DIR }}/onboarding",
+                "events": [
+                    "create",
+                    "change"
+                ]
+            },
+            "id": "trigger-002",
+            "name": "📂 Watch Onboarding Transcripts Folder",
+            "type": "n8n-nodes-base.localFileTrigger",
+            "position": [
+                200,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "python {{ $env.SCRIPTS_DIR }}/extract_memo.py \"{{ $json.path }}\" --call-type onboarding",
+                "cwd": "{{ $env.PROJECT_ROOT }}"
+            },
+            "id": "extract-002",
+            "name": "🧠 Extract Onboarding Memo (LLM)",
+            "type": "n8n-nodes-base.executeCommand",
+            "position": [
+                440,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const raw = $input.first().json.stdout;\nconst memo = JSON.parse(raw);\nreturn [{ json: memo }];"
+            },
+            "id": "parse-002",
+            "name": "🔧 Parse Onboarding Memo",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                680,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const memo = $input.first().json;\nconst accountId = memo.account_id;\nconst v1Path = `${process.env.OUTPUTS_DIR}/${accountId}/v1/account_memo.json`;\nconst obPath = `${process.env.OUTPUTS_DIR}/${accountId}/v1_onboarding_raw/account_memo.json`;\nreturn [{ json: { account_id: accountId, v1_path: v1Path, ob_path: obPath } }];"
+            },
+            "id": "paths-001",
+            "name": "🗂️ Resolve v1 + Onboarding Paths",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                920,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "python {{ $env.SCRIPTS_DIR }}/patch_memo.py \"{{ $json.v1_path }}\" \"{{ $json.ob_path }}\"",
+                "cwd": "{{ $env.PROJECT_ROOT }}"
+            },
+            "id": "patch-001",
+            "name": "🔄 Patch Memo v1 → v2",
+            "type": "n8n-nodes-base.executeCommand",
+            "position": [
+                1160,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "command": "python {{ $env.SCRIPTS_DIR }}/generate_agent_spec.py \"{{ $env.OUTPUTS_DIR }}/{{ $('🔧 Parse Onboarding Memo').first().json.account_id }}/v2/account_memo.json\" --version v2",
+                "cwd": "{{ $env.PROJECT_ROOT }}"
+            },
+            "id": "gen-spec-002",
+            "name": "⚙️ Generate Agent Spec v2",
+            "type": "n8n-nodes-base.executeCommand",
+            "position": [
+                1400,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "jsCode": "const accountId = $('🔧 Parse Onboarding Memo').first().json.account_id;\nconsole.log(`✅ Pipeline B complete for: ${accountId}`);\nreturn [{ json: { status: 'success', account_id: accountId, version: 'v2', timestamp: new Date().toISOString() } }];"
+            },
+            "id": "log-002",
+            "name": "✅ Log v2 Success",
+            "type": "n8n-nodes-base.code",
+            "position": [
+                1640,
+                300
+            ]
+        }
+    ],
+    "connections": {
+        "📂 Watch Onboarding Transcripts Folder": {
+            "main": [
+                [
+                    {
+                        "node": "🧠 Extract Onboarding Memo (LLM)",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🧠 Extract Onboarding Memo (LLM)": {
+            "main": [
+                [
+                    {
+                        "node": "🔧 Parse Onboarding Memo",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🔧 Parse Onboarding Memo": {
+            "main": [
+                [
+                    {
+                        "node": "🗂️ Resolve v1 + Onboarding Paths",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🗂️ Resolve v1 + Onboarding Paths": {
+            "main": [
+                [
+                    {
+                        "node": "🔄 Patch Memo v1 → v2",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "🔄 Patch Memo v1 → v2": {
+            "main": [
+                [
+                    {
+                        "node": "⚙️ Generate Agent Spec v2",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "⚙️ Generate Agent Spec v2": {
+            "main": [
+                [
+                    {
+                        "node": "✅ Log v2 Success",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "_meta": {
+        "description": "Pipeline B – Onboarding transcript → Patched Memo v2 → Agent Spec v2 → Changelog",
+        "zero_cost": true,
+        "requires_env": [
+            "GEMINI_API_KEY",
+            "DATA_DIR",
+            "SCRIPTS_DIR",
+            "OUTPUTS_DIR",
+            "PROJECT_ROOT"
+        ]
+    }
+}

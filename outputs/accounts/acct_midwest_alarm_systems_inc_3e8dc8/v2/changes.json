@@ -1,0 +1,92 @@
+{
+  "account_id": "acct_midwest_alarm_systems_inc_3e8dc8",
+  "from_version": "v1",
+  "to_version": "v2",
+  "generated_at": "2026-03-04T11:22:24.909893Z",
+  "total_changes": 11,
+  "changes": [
+    {
+      "path": "after_hours_flow_summary",
+      "action": "modified",
+      "old": "Greet caller; identify if emergency. Emergencies (Sales Rep: And how do you handle after-hours calls today?...): collect name, number, address \u2192 transfer to on-call technician; if transfer fails after 60s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+      "new": "Greet caller; identify if emergency. Emergencies (definition \u2014 confirmed fire alarm, CO alarm...): collect name, number, address \u2192 transfer to 217-555-0177; if transfer fails after 30s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback."
+    },
+    {
+      "path": "call_transfer_rules.retries",
+      "action": "modified",
+      "old": null,
+      "new": 2
+    },
+    {
+      "path": "call_transfer_rules.timeout_seconds",
+      "action": "modified",
+      "old": null,
+      "new": 30
+    },
+    {
+      "path": "emergency_definition",
+      "action": "modified",
+      "old": [
+        "Sales Rep: And how do you handle after-hours calls today?"
+      ],
+      "new": [
+        "definition \u2014 confirmed fire alarm",
+        "CO alarm",
+        "actual smoke or detection?"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.order",
+      "action": "modified",
+      "old": [],
+      "new": [
+        "217-555-0177"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "217-555-0177"
+    },
+    {
+      "path": "integration_constraints",
+      "action": "modified",
+      "old": [
+        "ServiceTitan integration required \u2014 do not create or modify records"
+      ],
+      "new": [
+        "Do not create or modify records in ServiceTitan"
+      ]
+    },
+    {
+      "path": "non_emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "217-555-0100"
+    },
+    {
+      "path": "office_hours_flow_summary",
+      "action": "modified",
+      "old": "Office open Monday - Friday 8 AM\u20136 PM Central. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to on-call technician. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+      "new": "Office open Monday - Friday 8 AM\u20136 PM Central. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 217-555-0177. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps."
+    },
+    {
+      "path": "services_supported",
+      "action": "modified",
+      "old": [
+        "inspection",
+        "alarm systems"
+      ],
+      "new": [
+        "alarm systems"
+      ]
+    },
+    {
+      "path": "transcript_source",
+      "action": "modified",
+      "old": "midwest_alarm_demo.txt",
+      "new": "midwest_alarm_onboarding.txt"
+    }
+  ]
+}

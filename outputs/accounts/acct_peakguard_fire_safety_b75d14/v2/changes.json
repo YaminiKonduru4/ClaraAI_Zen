@@ -1,0 +1,92 @@
+{
+  "account_id": "acct_peakguard_fire_safety_b75d14",
+  "from_version": "v1",
+  "to_version": "v2",
+  "generated_at": "2026-03-04T11:27:42.932142Z",
+  "total_changes": 11,
+  "changes": [
+    {
+      "path": "after_hours_flow_summary",
+      "action": "modified",
+      "old": "Greet caller; identify if emergency. Emergencies (We've had technicians dispatched on nuisance calls, missed a real leak once...): collect name, number, address \u2192 transfer to on-call technician; if transfer fails after 60s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+      "new": "Greet caller; identify if emergency. Emergencies (types \u2014 active sprinkler discharge, fire suppression trigger...): collect name, number, address \u2192 transfer to 720-555-0148; if transfer fails after 40s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback."
+    },
+    {
+      "path": "call_transfer_rules.timeout_seconds",
+      "action": "modified",
+      "old": null,
+      "new": 40
+    },
+    {
+      "path": "call_transfer_rules.transfer_fail_message",
+      "action": "modified",
+      "old": null,
+      "new": "We've paged our emergency dispatch team and someone will contact you within 15 minutes. If there is immediate danger to life or property, please call 911."
+    },
+    {
+      "path": "emergency_definition",
+      "action": "modified",
+      "old": [
+        "We've had technicians dispatched on nuisance calls",
+        "missed a real leak once"
+      ],
+      "new": [
+        "types \u2014 active sprinkler discharge",
+        "fire suppression trigger",
+        "confirmed fire alarm at monitored site",
+        "kitchen hood suppression activation?"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.fallback",
+      "action": "modified",
+      "old": null,
+      "new": "We've paged our emergency dispatch team and someone will contact you within 15 minutes. If there is immediate danger to life or property, please call 911."
+    },
+    {
+      "path": "emergency_routing_rules.order",
+      "action": "modified",
+      "old": [],
+      "new": [
+        "720-555-0148",
+        "720-555-0263",
+        "720-555-0391"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "720-555-0148"
+    },
+    {
+      "path": "non_emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "720-555-0391"
+    },
+    {
+      "path": "office_hours_flow_summary",
+      "action": "modified",
+      "old": "Office open Monday - Friday 7:30 AM\u20135 PM Mountain. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to on-call technician. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+      "new": "Office open Monday - Friday 7:30 AM\u20135 PM Mountain. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 720-555-0148. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps."
+    },
+    {
+      "path": "services_supported",
+      "action": "modified",
+      "old": [
+        "fire suppression",
+        "inspection"
+      ],
+      "new": [
+        "fire suppression"
+      ]
+    },
+    {
+      "path": "transcript_source",
+      "action": "modified",
+      "old": "peakguard_fire_demo.txt",
+      "new": "peakguard_fire_onboarding.txt"
+    }
+  ]
+}

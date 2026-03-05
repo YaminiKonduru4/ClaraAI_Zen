@@ -1,0 +1,53 @@
+[Onboarding Call Transcript – Account 4]
+Company: Statewide Sprinkler Co
+Date: 2024-11-27
+Participants: Onboarding Specialist (Clara Team), Client: Kevin Marsh + Coordinator: Lisa Tran
+
+---
+
+Specialist: Kevin, Lisa — let's finalize all the config for Statewide Sprinkler.
+
+Lisa: Great. Kevin I'll handle most of this since I manage all the call routing day-to-day.
+
+Specialist: Perfect. Business hours — Monday–Friday, 7 AM to 3:30 PM, MST (Arizona — no DST)?
+
+Lisa: Correct.
+
+Specialist: Emergency types — sprinkler head discharge, fire alarm connected to suppression, audible water flow where it shouldn't be?
+
+Lisa: Yes, and add this: any customer call about a failed suppression inspection that poses immediate risk. We've had a few of those.
+
+Specialist: Got it. Emergency routing?
+
+Lisa: Primary on-call rotates weekly. For the initial setup, use our dispatcher hotline: 480-555-0144. That's always staffed for emergencies. If that doesn't pick up in 45 seconds, escalate to Kevin directly: 480-555-0376. One retry, then fallback.
+
+Kevin: If we both don't answer — which almost never happens — tell them to call 911 and that our team has been notified.
+
+Specialist: Timeout 45 seconds, dispatcher hotline, then Kevin, one retry, 911 advisory on complete fail. Got it.
+
+Specialist: Non-emergency during business hours?
+
+Lisa: Transfer to our main office: 480-555-0100. I handle scheduling from there.
+
+Specialist: After-hours non-emergency?
+
+Lisa: Collect name, callback number, and the address of the property they're calling about. Tell them we'll call back next business day.
+
+Specialist: Any ServiceTrade rules?
+
+Lisa: Clara should not — under any circumstances — attempt to create, modify, or reference ServiceTrade. All job creation is my responsibility.
+
+Specialist: Locked in. Office address for the agent greeting?
+
+Kevin: 4800 East Camelback Road, Suite 210, Phoenix, Arizona 85018.
+
+Specialist: Any other constraints?
+
+Lisa: One thing — we sometimes get calls about inspection due dates. Clara should not provide any dates or job status information. Just collect info and refer to our office.
+
+Specialist: Noted. Clara does not access or reference job or inspection data.
+
+Kevin: Perfect. We're good.
+
+---
+[End of Onboarding Call]

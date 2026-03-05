@@ -1,0 +1,51 @@
+[Onboarding Call Transcript – Account 1]
+Company: Apex Fire Protection LLC
+Date: 2024-11-20
+Participants: Onboarding Specialist (Clara Team), Client: Mike Harrington + Janet Cole (Office Manager)
+
+---
+
+Specialist: Welcome to the Apex onboarding call. We're going to lock in all the configuration details today. Mike, Janet, thanks for joining.
+
+Mike: Of course. Janet handles all inbound routing, so she knows the specifics better than I do.
+
+Janet: Happy to help. Let's get this right.
+
+Specialist: Great. Let's start with business hours.
+
+Janet: Monday through Friday, 7 AM to 5 PM Eastern. We're closed all weekends.
+
+Specialist: Perfect. Now for emergencies — what exactly should Clara treat as a confirmed emergency?
+
+Janet: Active sprinkler leak, fire alarm activation, any smoke detection alert, and CO alarms in any of our monitored buildings. Those are the only four.
+
+Specialist: And for transfer — who does Clara try first?
+
+Janet: Dave Kowalski. His direct cell is 614-555-0182. If Dave doesn't pick up within 45 seconds, try our backup, Tom Reyes, at 614-555-0291. If neither picks up after two tries each, Clara should apologize and tell the caller our dispatch will call back within 10 minutes.
+
+Specialist: Got it. 45-second timeout, Dave first, Tom backup, 2 retries each, assure 10-minute callback. Correct?
+
+Janet: Yes exactly.
+
+Specialist: For non-emergency calls — like inspection scheduling?
+
+Janet: Those should just go to our main office line during business hours: 614-555-0100. After hours, just collect name, number, and the site address they want scheduled, and tell them we'll call back next business day.
+
+Specialist: Any ServiceTrade constraints we need to bake in?
+
+Janet: Super important — Clara should never, ever create a sprinkler job in ServiceTrade. We had a third-party automation mess that up once. Only our office team can create jobs.
+
+Mike: Yeah, that's a hard rule.
+
+Specialist: Absolutely. That goes in as a hard constraint. Is there anything else after-hours that should route differently?
+
+Janet: Fire alarm monitoring alerts — those should always follow the same emergency path even after hours. Don't treat them as non-emergency because it's late.
+
+Specialist: Makes sense. Last thing — any additional contacts or override numbers for holidays?
+
+Janet: No holiday overrides yet. We'll let you know if that changes.
+
+Specialist: Understood. We'll flag that as an open item. Thanks — we'll have the v2 agent ready within 24 hours.
+
+---
+[End of Onboarding Call]

@@ -1,0 +1,45 @@
+{
+  "account_id": "acct_midwest_alarm_systems_inc_3e8dc8",
+  "company_name": "Midwest Alarm Systems Inc",
+  "call_type": "onboarding",
+  "transcript_source": "midwest_alarm_onboarding.txt",
+  "extracted_at": "2026-03-04T11:22:23.955922Z",
+  "business_hours": {
+    "days": "Monday - Friday",
+    "start": "8 AM",
+    "end": "6 PM",
+    "timezone": "Central"
+  },
+  "office_address": null,
+  "services_supported": [
+    "alarm systems"
+  ],
+  "emergency_definition": [
+    "definition \u2014 confirmed fire alarm",
+    "CO alarm",
+    "actual smoke or detection?"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": "217-555-0177",
+    "order": [
+      "217-555-0177"
+    ],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "primary_contact": "217-555-0100",
+    "fallback": "Collect name, number, and issue for next business day callback"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": 30,
+    "retries": 2,
+    "transfer_fail_message": null
+  },
+  "integration_constraints": [
+    "Do not create or modify records in ServiceTitan"
+  ],
+  "after_hours_flow_summary": "Greet caller; identify if emergency. Emergencies (definition \u2014 confirmed fire alarm, CO alarm...): collect name, number, address \u2192 transfer to 217-555-0177; if transfer fails after 30s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+  "office_hours_flow_summary": "Office open Monday - Friday 8 AM\u20136 PM Central. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 217-555-0177. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+  "questions_or_unknowns": [],
+  "notes": "Extracted via enhanced rule-based parser."
+}

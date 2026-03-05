@@ -1,0 +1,51 @@
+[Demo Call Transcript – Account 3]
+Company: PeakGuard Fire & Safety
+Date: 2024-11-14
+Participants: Sales Rep (Clara), Client: Tom Brightwood (VP Operations)
+
+---
+
+Sales Rep: Tom, thanks for connecting. Walk me through PeakGuard and what's driving the interest in AI call handling.
+
+Tom: Sure. PeakGuard is a regional fire and safety contractor. We're headquartered in Denver — serve Colorado and southern Wyoming. Sprinkler systems, suppression, inspection, the whole gamut. About 70 employees.
+
+Sales Rep: Big operation. What's the call problem?
+
+Tom: Two things. One, our receptionist can't always tell which calls are emergencies. We've had technicians dispatched on nuisance calls and missed a real leak once. Two, after-hours is a mess — we use a paging service that's slow and unreliable.
+
+Sales Rep: What is a real emergency in your world?
+
+Tom: Active sprinkler discharge. Any fire suppression system triggering. Confirmed fire alarm at a monitored site. Chemical suppression system activation — we do some kitchen hood systems.
+
+Sales Rep: And what's not an emergency?
+
+Tom: Inspection scheduling, general inquiries, billing questions. Those can wait until office hours.
+
+Sales Rep: What are your business hours?
+
+Tom: Monday through Friday, 7:30 AM to 5 PM Mountain time.
+
+Sales Rep: Do you use any software system for field management?
+
+Tom: We're on ServiceTrade. Our project coordinators do all job creation. We would not want any external system touching that.
+
+Sales Rep: Understood. Clara won't touch ServiceTrade — she's a call handler only. Let me show you the demo...
+
+[Demo played — Tom watches emergency call flow]
+
+Tom: How does she handle the case where the caller doesn't know if it's a real emergency?
+
+Sales Rep: She qualifies by asking a couple of targeted questions — "Is your system actively discharging?" or "Is there smoke visible?" — and escalates only if confirmed.
+
+Tom: That's smart. Our current paging service doesn't do any of that.
+
+Sales Rep: And if your on-call doesn't pick up?
+
+Tom: That's the critical gap. Right now if no one answers, the caller is stuck.
+
+Sales Rep: With Clara, she'll retry, then tell the caller dispatch has been notified and will call back urgently. Zero dead ends.
+
+Tom: I need to show this to our safety director. We're very interested.
+
+---
+[End of Demo Call]

@@ -1,0 +1,45 @@
+[Onboarding Call Transcript – Account 3]
+Company: PeakGuard Fire & Safety
+Date: 2024-11-25
+Participants: Onboarding Specialist (Clara Team), Client: Tom Brightwood + Safety Director: Rachel Fong
+
+---
+
+Specialist: Tom, Rachel — let's lock in PeakGuard's configuration.
+
+Rachel: Happy to. I've been managing our on-call rotation so I'll cover most of the routing logic.
+
+Specialist: Business hours — Monday–Friday, 7:30 AM to 5 PM Mountain. Confirmed?
+
+Tom: Confirmed.
+
+Specialist: Emergency types — active sprinkler discharge, fire suppression trigger, confirmed fire alarm at monitored site, kitchen hood suppression activation?
+
+Rachel: Yes, plus add any call about an active CO leak at a commercial property. That's life safety.
+
+Specialist: Added. On-call routing?
+
+Rachel: Primary: Rachel Fong (me), 720-555-0148. Backup: Marcus Webb, 720-555-0263. Tertiary for extreme cases: Tom Brightwood, 720-555-0391. Timeout per contact: 40 seconds. Two cycles through the full list before fallback.
+
+Specialist: Fallback message?
+
+Rachel: "We've paged our emergency dispatch team and someone will contact you within 15 minutes. If there is immediate danger to life or property, please call 911."
+
+Specialist: Perfect. Non-emergency after-hours?
+
+Rachel: Collect name, number, company name, and a brief description of the issue. Tell them we'll follow up first thing next business day.
+
+Tom: Also — if it's a ServiceTrade inquiry, like a customer asking about a job status, Clara should NOT try to look anything up. Just collect info and forward to us.
+
+Specialist: Noted. Clara does not access ServiceTrade — she only collects and routes.
+
+Rachel: One more thing — we have some government building contracts. Any call mentioning "government facility" or "federal building" should be flagged and routed to Tom directly, even if it's seemingly non-emergency.
+
+Specialist: Got it — government facility keyword triggers priority routing to Tom at 720-555-0391.
+
+Tom: Thanks, this is thorough. One thing still open — we haven't decided our holiday schedule yet.
+
+Specialist: We'll note that as an open question. You can send us your holiday closures and we'll update the config.
+
+---
+[End of Onboarding Call]

@@ -1,0 +1,56 @@
+{
+  "run_at": "2026-03-04T10:47:22.699891Z",
+  "total_accounts": 5,
+  "pipeline_a": {
+    "success": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "pipeline_b": {
+    "success": 5,
+    "failed": 0,
+    "skipped": 0
+  },
+  "accounts": [
+    {
+      "account_id": "acct_apex_fire_protection_llc_66c5b3",
+      "demo_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\apex_fire_demo.txt",
+      "onboarding_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\apex_fire_onboarding.txt",
+      "pipeline_a_status": "success",
+      "pipeline_b_status": "success",
+      "error": null
+    },
+    {
+      "account_id": "acct_guardian_shield_fire_protection_ac6779",
+      "demo_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\guardian_shield_demo.txt",
+      "onboarding_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\guardian_shield_onboarding.txt",
+      "pipeline_a_status": "success",
+      "pipeline_b_status": "success",
+      "error": null
+    },
+    {
+      "account_id": "acct_midwest_alarm_systems_inc_3e8dc8",
+      "demo_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\midwest_alarm_demo.txt",
+      "onboarding_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\midwest_alarm_onboarding.txt",
+      "pipeline_a_status": "success",
+      "pipeline_b_status": "success",
+      "error": null
+    },
+    {
+      "account_id": "acct_peakguard_fire_safety_b75d14",
+      "demo_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\peakguard_fire_demo.txt",
+      "onboarding_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\peakguard_fire_onboarding.txt",
+      "pipeline_a_status": "success",
+      "pipeline_b_status": "success",
+      "error": null
+    },
+    {
+      "account_id": "acct_statewide_sprinkler_co_a95758",
+      "demo_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\statewide_sprinkler_demo.txt",
+      "onboarding_file": "C:\\Users\\yamin_qk0fyix\\OneDrive\\Desktop\\ZenTrad\\clara-ai-pipeline\\data\\transcripts\\statewide_sprinkler_onboarding.txt",
+      "pipeline_a_status": "success",
+      "pipeline_b_status": "success",
+      "error": null
+    }
+  ]
+}

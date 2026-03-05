@@ -1,0 +1,49 @@
+{
+  "account_id": "acct_apex_fire_protection_llc_66c5b3",
+  "company_name": "Apex Fire Protection LLC",
+  "call_type": "demo",
+  "transcript_source": "apex_fire_demo.txt",
+  "extracted_at": "2026-03-04T11:36:07.417730Z",
+  "business_hours": {
+    "days": "Monday - Friday",
+    "start": "7 AM",
+    "end": "5 PM",
+    "timezone": "Eastern"
+  },
+  "office_address": null,
+  "services_supported": [
+    "fire protection",
+    "sprinkler installation",
+    "fire alarm monitoring",
+    "fire suppression",
+    "inspection"
+  ],
+  "emergency_definition": [
+    "calls. We have a dedicated on-call guy",
+    "but callers don't always get straight through"
+  ],
+  "emergency_routing_rules": {
+    "primary_contact": null,
+    "order": [],
+    "fallback": null
+  },
+  "non_emergency_routing_rules": {
+    "primary_contact": null,
+    "fallback": "Collect name, number, and issue for next business day callback"
+  },
+  "call_transfer_rules": {
+    "timeout_seconds": null,
+    "retries": null,
+    "transfer_fail_message": null
+  },
+  "integration_constraints": [
+    "ServiceTrade integration required \u2014 do not create or modify records"
+  ],
+  "after_hours_flow_summary": "Greet caller; identify if emergency. Emergencies (calls. We have a dedicated on-call guy, but callers don't always get straight through...): collect name, number, address \u2192 transfer to on-call technician; if transfer fails after 60s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+  "office_hours_flow_summary": "Office open Monday - Friday 7 AM\u20135 PM Eastern. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to on-call technician. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+  "questions_or_unknowns": [
+    "Emergency contact number not found",
+    "Call transfer timeout not specified \u2014 defaulting to 60s"
+  ],
+  "notes": "Extracted via enhanced rule-based parser."
+}

@@ -1,0 +1,24 @@
+"""
+patch_memo.py – Apply onboarding data to an existing v1 memo → produce v2.
+
+Handles:
+- Deep merge of onboarding memo fields into v1
+- Change detection and changelog generation
+- Conflict resolution (onboarding always wins, with logging)
+- Version bump v1 → v2
+"""
+
+"""
+    Merges `updates` into `base` (non-destructive for unrelated fields).
+    Rules:
+    - Scalars in updates ALWAYS override base.
+    - Lists in updates REPLACE base lists (not extend), to reflect confirmed config.
+    - Nested dicts are merged recursively.
+    - Null values in updates do NOT overwrite non-null base values.
+    - questions_or_unknowns from base are carried forward unless resolved in updates.
+    """
+
+"""
+    Loads v1 memo and onboarding memo, merges them, writes v2.
+    Returns (v2_memo, changelog).
+    """

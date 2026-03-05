@@ -1,0 +1,102 @@
+{
+  "account_id": "acct_statewide_sprinkler_co_a95758",
+  "from_version": "v1",
+  "to_version": "v2",
+  "generated_at": "2026-03-04T10:47:22.655856Z",
+  "total_changes": 12,
+  "changes": [
+    {
+      "path": "after_hours_flow_summary",
+      "action": "modified",
+      "old": "Greet caller; identify if emergency. Emergencies (just... waits...): collect name, number, address \u2192 transfer to on-call technician; if transfer fails after 60s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback.",
+      "new": "Greet caller; identify if emergency. Emergencies (types \u2014 sprinkler head discharge, fire alarm connected to suppression...): collect name, number, address \u2192 transfer to 480-555-0144; if transfer fails after 45s, assure callback within 10 min. Non-emergencies: collect name, number, issue \u2192 confirm next-business-day callback."
+    },
+    {
+      "path": "business_hours.end",
+      "action": "modified",
+      "old": null,
+      "new": "3:30 PM"
+    },
+    {
+      "path": "business_hours.start",
+      "action": "modified",
+      "old": null,
+      "new": "7 AM"
+    },
+    {
+      "path": "call_transfer_rules.timeout_seconds",
+      "action": "modified",
+      "old": null,
+      "new": 45
+    },
+    {
+      "path": "emergency_definition",
+      "action": "modified",
+      "old": [
+        "just... waits"
+      ],
+      "new": [
+        "types \u2014 sprinkler head discharge",
+        "fire alarm connected to suppression",
+        "audible water flow where it shouldn't be?"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.order",
+      "action": "modified",
+      "old": [],
+      "new": [
+        "480-555-0144",
+        "480-555-0376",
+        "480-555-0100"
+      ]
+    },
+    {
+      "path": "emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "480-555-0144"
+    },
+    {
+      "path": "integration_constraints",
+      "action": "modified",
+      "old": [
+        "ServiceTrade integration required \u2014 do not create or modify records"
+      ],
+      "new": [
+        "Do not create or modify records in ServiceTrade"
+      ]
+    },
+    {
+      "path": "non_emergency_routing_rules.primary_contact",
+      "action": "modified",
+      "old": null,
+      "new": "480-555-0100"
+    },
+    {
+      "path": "office_hours_flow_summary",
+      "action": "modified",
+      "old": "Office open Monday - Friday business hours start\u2013business hours end Mst. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to on-call technician. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps.",
+      "new": "Office open Monday - Friday 7 AM\u20133:30 PM Mst. Greet caller, identify purpose, collect name & number. Emergencies \u2192 transfer to 480-555-0144. Non-emergencies \u2192 route to main office line. Wrap-up confirm next steps."
+    },
+    {
+      "path": "services_supported",
+      "action": "modified",
+      "old": [
+        "sprinkler installation",
+        "fire suppression",
+        "inspection"
+      ],
+      "new": [
+        "fire suppression",
+        "inspection"
+      ]
+    },
+    {
+      "path": "transcript_source",
+      "action": "modified",
+      "old": "statewide_sprinkler_demo.txt",
+      "new": "statewide_sprinkler_onboarding.txt"
+    }
+  ]
+}

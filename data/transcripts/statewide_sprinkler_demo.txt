@@ -1,0 +1,47 @@
+[Demo Call Transcript – Account 4]
+Company: Statewide Sprinkler Co
+Date: 2024-11-15
+Participants: Sales Rep (Clara), Client: Kevin Marsh (General Manager)
+
+---
+
+Sales Rep: Kevin, thanks for your time. Tell me about Statewide Sprinkler.
+
+Kevin: We've been doing sprinkler installation, inspection, and service in the Phoenix metro for about 14 years. Run about 35 technicians. Mostly commercial — hotels, office parks, retail centers.
+
+Sales Rep: And what's the main pain point with inbound calls?
+
+Kevin: We get a ton of calls that our receptionist can't handle. She's part-time, so any call after 2 PM is going to voicemail. After hours, anything that's an emergency just... waits. That's a liability problem for us.
+
+Sales Rep: What constitutes an emergency for Statewide?
+
+Kevin: Sprinkler head physically going off — that's number one. Any fire alarm connected to a suppression system. Anything that sounds like water is running where it shouldn't be.
+
+Sales Rep: Business hours?
+
+Kevin: Monday through Friday, 7 to 3:30 PM Arizona time. No daylight savings here — we're always MST.
+
+Sales Rep: Do you use field software?
+
+Kevin: We're on ServiceTrade. All job dispatch goes through our coordinator, Lisa.
+
+Sales Rep: Got it. Clara won't create or modify any ServiceTrade records — she's purely a call router.
+
+Kevin: That's exactly what I want.
+
+Sales Rep: And emergency contact — do you have an on-call number?
+
+Kevin: We have a rotation. I'll sort out the specific contacts for the onboarding call. But basically it goes to whoever is on-call first, then to me if they don't answer.
+
+Sales Rep: Perfect thing to finalize in onboarding. Let me run the demo...
+
+[Demo played]
+
+Kevin: I like the structure — the agent doesn't ramble. My receptionist tends to over-explain and callers get confused.
+
+Sales Rep: Clara is trained to be concise and directive. Especially for emergencies — she moves fast.
+
+Kevin: Sold. Let's move forward.
+
+---
+[End of Demo Call]

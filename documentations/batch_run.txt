@@ -1,0 +1,20 @@
+"""
+batch_run.py – Batch process all demo + onboarding transcripts.
+
+Usage:
+  python batch_run.py                          # auto-discover data/transcripts/
+  python batch_run.py --demo-dir path/demos --onboarding-dir path/onboarding
+
+Expects file naming convention:
+  demo/         → acme_demo.txt, xyz_demo.txt, ...
+  onboarding/   → acme_onboarding.txt, xyz_onboarding.txt, ...
+
+The script matches demo + onboarding files by shared prefix/account stem so
+Pipeline A and B can run as a coupled pair.
+"""
+
+ """
+    Match demo → onboarding by shared stem prefix.
+    E.g., "acme_fire_demo.txt" ↔ "acme_fire_onboarding.txt"
+    Falls back to positional matching if stems don't share prefixes.
+"""

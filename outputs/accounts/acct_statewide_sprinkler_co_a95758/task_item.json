@@ -1,0 +1,10 @@
+{
+  "account": "Statewide Sprinkler Co",
+  "account_id": "acct_statewide_sprinkler_co_a95758",
+  "status": "Onboarding Processed",
+  "agent_version": "v2",
+  "pipeline_a_status": "success",
+  "pipeline_b_status": "success",
+  "next_step": "Review v2 agent spec and schedule Retell import",
+  "created_at": "2026-03-04T10:47:22.697383Z"
+}

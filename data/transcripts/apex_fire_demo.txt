@@ -1,0 +1,55 @@
+[Demo Call Transcript – Account 1]
+Company: Apex Fire Protection LLC
+Date: 2024-11-10
+Participants: Sales Rep (Clara), Client: Mike Harrington (Operations Manager)
+
+---
+
+Sales Rep: Thanks for joining the call today, Mike. Can you tell me a bit about Apex Fire Protection and what your current situation looks like with inbound calls?
+
+Mike: Sure. So we're Apex Fire Protection LLC, based out of Columbus, Ohio. We do sprinkler installation, inspection, and fire alarm monitoring for commercial buildings — restaurants, warehouses, office complexes, that kind of thing.
+
+Sales Rep: And what's your current call volume like?
+
+Mike: We get maybe 40 to 60 calls a day. The big pain point is after-hours emergency calls. We have a dedicated on-call guy, Dave, but callers don't always get straight through. Sometimes there's three or four tries before someone picks up.
+
+Sales Rep: That makes complete sense. What kinds of calls would you consider true emergencies?
+
+Mike: Absolutely a sprinkler leak, a fire alarm going off unexpectedly, any active fire suppression system trigger. Basically anything that could mean active property damage or life safety risk.
+
+Sales Rep: Got it. What are your office hours typically?
+
+Mike: Monday through Friday, 7 AM to 5 PM Eastern.
+
+Sales Rep: And after hours, is it just Dave on call?
+
+Mike: Right now yes, but we might add a second contact soon. Haven't decided.
+
+Sales Rep: Do you use any field management software that Clara should know about?
+
+Mike: We use ServiceTrade. But our office manager, Janet, handles all the job creation. We don't want Clara creating any jobs automatically.
+
+Sales Rep: Understood. Clara would never create jobs — she just routes and collects info. Let me show you a quick demo of how she handles an emergency call...
+
+[Demo call played — Clara greets, identifies emergency, collects name and number, attempts transfer]
+
+Mike: That's pretty clean. The caller experience is smooth. I like that she doesn't ask twenty questions.
+
+Sales Rep: Exactly. And if the transfer to Dave fails, she logs everything and assures the caller of a quick follow-up.
+
+Mike: That's the part we need most. Right now if Dave doesn't pick up, the caller just hears a voicemail and sometimes panics.
+
+Sales Rep: Clara eliminates that gap. Are there any non-emergency calls you'd want handled differently?
+
+Mike: Yeah — inspection scheduling. Those can wait until office hours. Just collect their info and we'll call back.
+
+Sales Rep: Perfect. One more thing — any idea on your address for the agent greeting?
+
+Mike: 1140 Industrial Blvd, Columbus, Ohio 43215.
+
+Sales Rep: Great. I'll get you a follow-up summary. Any questions?
+
+Mike: Not right now. Let me talk to our owner and get back to you.
+
+---
+[End of Demo Call]
